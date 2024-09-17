@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <title>Metroid: Missão Zebes</title>
+    </head>
+
+    <body>
+        <main>
+            <div class="step active" id="step-0">
+                <img src="start_img.avif" alt="Samus em Zebes (Metroid Zero Mission, 2004)">
+                <p>O ano é 20XX. A ultima forma de vida da criatura conhecida como Metroid foi capturada por Ridley e seus Piratas Espaciais para ser usado como uma arma biologica. A missão de Samus é simples: recuperar o Metroid e se livrar desses piratas de uma vez por todas. Ela aterrissou em Zebes, onde se encontra a base desses piratas, será que ela conseguirá recuperar o Metroid e salvar a galaxia?</p>
+                <button class="btn-next" data-nxt="base0">Seguir á base dos piratas.</button>
+                <button class="btn-next" data-nxt="1">Seguir á caverna atrás de sua nave.</button>
+            </div>
+
+            <div class="step" id="step-base0">
+                <p>Samus se aproxima da base. Um grande portão impenetrável se encontra em sua frente. Do lado do portão tem um duto de ventilação, onde ela provavelmente poderia entrar usando a Morph Ball.</p>
+                <button class="btn-next" data-nxt="base1">Usar a Morph Ball e entrar no duto.</button>
+                <button class="btn-next" data-nxt="0">Voltar á área da nave.</button>
+            </div>
+
+            <div class="step" id="step-base1">
+                <p>Samus entra na base e encontra três caminhos:</p>
+                <p>O primeiro é um caminho escuro, não dá para ver o que tem do outro lado.</p>
+                <p>O segundo parece estar normal.</p>
+                <p>O terceiro tem duas sombras de Piratas Espaciais, indicando que ele leva a algo que deve ser protegido.</p>
+                <button class="btn-next" data-nxt="base4">Seguir ao primeiro caminho.</button>
+                <button class="btn-next" data-nxt="base2">Seguir ao segundo caminho.</button>
+                <button class="btn-next" data-nxt="base3">Seguir ao terceiro caminho.</button>
+                <button class="btn-next" data-nxt="base0">Sair da base.</button>
+            </div>
+
+            <div class="step" id="step-base2">
+                <p>Samus chega á uma sala de controle, ela decide escanear o texto em um dos monitores com seu visor, traduzindo o texto.</p>
+                <p>"Dia 3 de testes</p>
+                <p>O DNA do Metroid foi novamente usada em esperança de criar clones. Nós sucedimos na criação da criatura, mas ela acabou mais fraca do que o Metroid capturado. Nomeamos essa tentativa de 'Mochtroid', continuaremos os testes até conseguirmos a copia perfeita."</p>
+                <button class="btn-next" data-nxt="base1">Voltar á entrada.</button>
+            </div>
+
+            <div class="step" id="step-base3">
+                <p>Samus enfrenta os Piratas e vence, podendo entrar na porta que protegiam. Ela se depara com uma sala de testes cheia de tubos com diferentes criaturas. Ao explorar, encontra uma região onde aparentemente estaria a capsula com o Metroid, mas a capsula está ausente e tem um buraco no teto. Ridley sabia que ela vinha e decidiu fugir com o Metroid. A única escolha que sobrou é ir para as cavernas e procurar por ele.</p>
+                <button class="btn-next" data-nxt="base1">Voltar á entrada.</button>
+            </div>
+
+            <div class="step" id="step-base4">
+                <p>Samus se encontra em um corredor escuro. Ao ligar a visão nortuna de seu visor, ela encontra o mapa de Zebes, logo localizando a base e a caverna. A caverna se divide em multiplos caminhos:</p>
+                <p>Esquerda, Esquerda e Direita para uma cachoeira.</p>
+                <p>Direita e Direita de novo para um buraco com criaturas perigosas.</p>
+                <p>Reto para uma área aberta com artefatos desconhecidos.</p>
+                <button class="btn-next" data-nxt="base1">Voltar á entrada.</button>
+            </div>
+
+            <div class="step" id="step-1">
+                <p>Samus entra na caverna e encontra três caminhos. Todos parecem levar ao mesmo lugar.</p>
+                <button class="btn-next" data-nxt="waywater0">Seguir ao primeiro caminho.</button>
+                <button class="btn-next" data-nxt="middleway">Seguir ao segundo caminho.</button>
+                <button class="btn-next" data-nxt="wayhole0">Seguir ao terceiro caminho.</button>
+                <button class="btn-next" data-nxt="0">Sair da caverna.</button>
+            </div>
+
+            <div class="step" id="step-waywater0">
+                <p>Samus se depara com dois caminhos.</p>
+                <button class="btn-next" data-nxt="waywater1">Seguir a esquerda.</button>
+                <button class="btn-next" data-nxt="stop">Seguir a direita.</button>
+            </div>
+
+            <div class="step" id="step-waywater1">
+                <p>Samus se depara com mais dois caminhos. Um misterioso barulho de água pode ser ouvido ecoando pelos corredores á sua frente.</p>
+                <button class="btn-next" data-nxt="stop">Seguir a esquerda.</button>
+                <button class="btn-next" data-nxt="waywater2">Seguir a direita.</button>
+            </div>
+
+            <div class="step" id="step-waywater2">
+                <p>Samus encontra uma grande cachoeira. Ao olhar pro chão, ela encontra pegadas que parecem levar direto ao terceiro caminho.</p>
+                <button class="btn-next" data-nxt="1">Voltar ao inicio.</button>
+            </div>
+
+            <div class="step" id="step-middleway">
+                <p>Samus encontra uma sala com antigos artefatos da civilização Chozo, uma antiga raça alienigina que habitava Zebes. Ela encontra várias estatuas, uma delas estando decapitada e coberta por marcas de garras. Samus então escuta um horripilante grito ecoando pela caverna.</p>
+                <p>Ridley esta lá dentro também.</p>
+                <button class="btn-next" data-nxt="1">Voltar ao inicio.</button>
+            </div>
+
+            <div class="step" id="step-wayhole0">
+                <p>Samus se depara com dois caminhos.</p>
+                <button class="btn-next" data-nxt="stop">Seguir a esquerda.</button>
+                <button class="btn-next" data-nxt="wayhole1">Seguir a direita.</button>
+            </div>
+
+            <div class="step" id="step-wayhole1">
+                <p>Samus encontra um grande buraco no chão, barulhos de diferentes criaturas podem ser ouvidas vindo de lá.</p>
+                <button class="btn-next" data-nxt="end">Entrar no buraco.</button>
+                <button class="btn-next" data-nxt="1">Voltar ao inicio.</button>
+            </div>
+
+            <div class="step" id="step-stop">
+                <p>Samus se depara com uma parede, não parece ter nada do outro lado.</p>
+                <button class="btn-next" data-nxt="1">Voltar ao inicio.</button>
+            </div>
+
+            <div class="step" id="step-end">
+                <img src="ending_img.avif" alt="Samus contra Ridley (feito por Noe Leyva)" class="ending">
+                <p>Samus pula no buraco e encontra varias criaturas em volta da área. Ela também encontra o seu arqui inimigo, Ridley, segurando a capsula do Metroid em suas garras. Sem pensar duas vezes, Samus avança em sua direção com a arma no seu braço direito carregando energia. Então, ela da um soco no rosto de Ridley com esse braço, liberando toda a energia e causando uma fratura horrível em seu rosto. Os dois partem para a luta, com Samus levando a melhor. Não tanto tempo depois, Ridley se agacha, ele está fraco, Samus está pronta para acabar aquilo de uma vez por todas, mas logo ouve um grande alarme.</p>
+                <p>"EMERGÊNCIA: SEQUÊNCIA DE AUTO-DESTRUIÇÃO ATIVADA, EVACUEM A ÀREA IMEDIATAMENTE."</p>
+                <p>Ela rapidamente pega a capsula do Metroid e foge para sua nave, deixando Ridley e o resto dos Piratas para morrer. Ela sai de Zebes e assiste o planeta explodir, segurando a capsula com o Metroid em suas mãos.</p>
+                <p class= "ending-text">MISSÃO CUMPRIDA</p>
+            </div>
+
+        <script src="script.js"></script>
+
+    
+    </body>
+</html>

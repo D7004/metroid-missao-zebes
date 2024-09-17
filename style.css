@@ -1,0 +1,44 @@
+body {
+    background-color: black;
+    color:white;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 700px;
+    margin: 2%;
+}
+
+button {
+    background-color: white;
+    border-color: white;
+    font-size: 25px;
+    font-family: "Chakra Petch", sans-serif;
+}
+
+.step {
+    display: none;
+}
+
+.step.active {
+    display: block;
+}
+
+main {
+    max-width: 90%;
+}
+
+img {
+    max-width: 50%;
+}
+
+.ending-text {
+    font-size: 65px;
+    color: rgb(42, 192, 42);
+}
+
+.ending {
+    padding-top: 45%;
+}
